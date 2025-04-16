@@ -15,6 +15,10 @@
     --hover-color: #f7822e;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .container{
     width: min(95%, 1240px);
     margin: auto;
@@ -133,21 +137,31 @@ header{
     font-weight: 500;
 }
 
-.navbar ul li{
-    display: inline;
-    margin-right: 20px;
+.navbar ul{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.navbar ul li a{
     font-size: 16px;
-    color: #fff;
+    color: #ffffff;
     cursor: pointer;
+}
+
+.navbar ul li{
     transition: all .3s linear;
 }
+
 .navbar ul li:hover{
     background-color: var(--Primary-color);
     padding: 8px 15px;
     border-radius: 50px;
+    transition: all .3s linear;
 }
 
-.navbar ul li.active{
+.navbar ul .active{
     background-color: var(--Primary-color);
     padding: 8px 15px;
     border-radius: 50px;
@@ -183,11 +197,12 @@ header{
     z-index: 9;
 }
 
-.d-menu a{
-    color: #000;
+.d-menu span{
+    color: black;
     transition: 0.2s;
+    cursor: pointer;
 }
-.d-menu a:hover{
+.d-menu span:hover{
     color: var(--Primary-color);
 }
 

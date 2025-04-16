@@ -1,3 +1,18 @@
+// Nav menu btn
+
+const tabLinks = document.querySelectorAll(".tab-link");
+
+function changetab(tabname, event) {
+    tabLinks.forEach((tablink) => {
+        tablink.classList.remove("active");
+    });
+    
+    event.currentTarget.classList.add("active");
+    document.getElementById(tabname).classList.add("active");
+}
+
+
+
 // Start Nav and Toggle Menu
 
 // Select elements

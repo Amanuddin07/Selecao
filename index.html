@@ -11,29 +11,29 @@
     <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="header-content container">
             <a href="#" class="logo">Selecao</a>
 
             <div class="navbar">
                 <ul>
-                    <li class="active">Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Portfolio</li>
-                    <li>Team</li>
-                    <li>Blog</li>
+                    <li class="tab-link active" onclick="changetab('hero', event)"><a href="#hero">Home</a></li>
+                    <li class="tab-link" onclick="changetab('about', event)"><a href="#about">About</a></li>
+                    <li class="tab-link" onclick="changetab('services', event)"><a href="#services">Services</a></li>
+                    <li class="tab-link" onclick="changetab('Pricing', event)"><a href="#Pricing">Pricing</a></li>
+                    <li class="tab-link" onclick="changetab('team', event)"><a href="#team">Team</a></li>
                     
-                    <li class="drpDown">Dropdown <i class="bi bi-chevron-down"></i>
+                    <li class="drpDown"><a href="#">Dropdown <i class="bi bi-chevron-down"></i></a>
                         <div class="d-menu">
-                            <a href="#">Dropdown 1</a>
-                            <a href="#">Dropdown 2</a>
-                            <a href="#">Dropdown 3</a>
-                            <a href="#">Dropdown 4</a>
-                            <a href="#">Dropdown 5</a>
+                            <span>Dropdown 1</span></a>
+                            <span>Dropdown 2</span></a>
+                            <span>Dropdown 3</span></a>
+                            <span>Dropdown 4</span></a>
+                            <span>Dropdown 5</span></a>
+                            
                         </div>
                     </li>
-                    <li>Contact</li>
+                    <li class="tab-link" onclick="changetab('contact', event)"><a href="#contact">Contact</a></li>
                 </ul>
             </div>
 
